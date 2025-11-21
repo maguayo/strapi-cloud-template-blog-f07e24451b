@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_cta",
+  "info": {
+    "displayName": "CTA",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "success",
+        "warning",
+        "danger"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "button_text": {
+      "type": "string",
+      "required": true
+    },
+    "button_link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

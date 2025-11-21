@@ -27,7 +27,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "author": {
       "type": "relation",
@@ -41,9 +45,32 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
     "blocks": {
       "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "components": [
+        "shared.rich-text",
+        "shared.image-text",
+        "shared.seo",
+        "shared.alert",
+        "shared.cta"
+      ]
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "language": {
+      "type": "string",
+      "required": true,
+      "maxLength": 2,
+      "minLength": 2
+    },
+    "podcast_url": {
+      "type": "string"
     }
   }
 }

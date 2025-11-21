@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_alerts",
+  "info": {
+    "displayName": "Alert",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "success",
+        "warning",
+        "danger"
+      ]
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
